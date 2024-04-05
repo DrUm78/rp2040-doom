@@ -438,7 +438,7 @@ static void display_driver_init() {
 
     gpio_set_function(PICO_DEFAULT_SPI_SCK_PIN, GPIO_FUNC_SPI);
     gpio_set_function(PICO_DEFAULT_SPI_TX_PIN, GPIO_FUNC_SPI);
-    spi_init(spi0, 62500000);
+    spi_init(spi0, 62000000);
     spi_set_format(spi0, 8, SPI_CPOL_0, SPI_CPHA_0, SPI_MSB_FIRST);
 
     gpio_put(J_OLED_CS, 1);
